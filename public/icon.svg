@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+  <!-- Roll of Joy mark: two dice caught mid-throw — a blue one behind, a
+       yellow one in front showing five pips, both knocked 12 degrees over,
+       with three motion lines trailing off to the left and a pink spark at the
+       top right.
+
+       The first <rect fill> is what app/apple-icon.tsx reads as the 180x180
+       background plate — the page's own cream, so iOS composites the mark onto
+       its own paper rather than onto black. It is drawn OUTSIDE the dice
+       geometry (the full viewBox), so at favicon size the throw still reads
+       edge to edge.
+
+       src/app/favicon.ico is the same artwork rasterised at 16/32/48 — see
+       scripts/make-favicon.py. -->
+  <rect width="52" height="52" rx="12" fill="#f7f2ea"/>
+  <g stroke="#0078bf" stroke-width="3" stroke-linecap="round">
+    <path d="M3 22h7M1.5 30h9M4 38h6"/>
+  </g>
+  <rect x="15" y="9" width="34" height="34" rx="9" fill="#0078bf" transform="rotate(12 32 26)"/>
+  <rect x="12" y="7" width="34" height="34" rx="9" fill="#ffe14d" stroke="#1d1a2f" stroke-width="2.5" transform="rotate(12 29 24)"/>
+  <g fill="#1d1a2f" transform="rotate(12 29 24)">
+    <circle cx="22.5" cy="18" r="2.6"/><circle cx="35.5" cy="18" r="2.6"/>
+    <circle cx="20.5" cy="27" r="2"/><circle cx="24.2" cy="31.2" r="2"/>
+    <circle cx="29" cy="32.6" r="2"/><circle cx="33.8" cy="31.2" r="2"/>
+    <circle cx="37.5" cy="27" r="2"/>
+  </g>
+  <circle cx="45" cy="9" r="3" fill="#ff5a36" stroke="#1d1a2f" stroke-width="2"/>
+</svg>
